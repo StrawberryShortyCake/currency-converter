@@ -1,0 +1,17 @@
+{% extends "base.jinja" %}
+
+{% block content %}
+<main>
+<h1>
+Conversion Calculator
+</h1>
+<div id="result-container">
+    <p>
+    The result is {{ converted_currency_sign }}{{ amount_converted }}.
+    </p>
+    <a href="/">
+      <button>HOME</button>
+    </a>
+</div>
+</main>
+{% endblock %}

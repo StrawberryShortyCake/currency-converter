@@ -1,0 +1,68 @@
+body{
+  background-image: url("https://i.imgur.com/7VT7e5R.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+  width: 45vw;
+  border-style: solid;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button{
+  width: 100px;
+}
+
+label{
+  margin-bottom: 5px;
+}
+
+#conversion-form{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin: 10px;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  font-weight: 600;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+#result-container{
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notifications{
+  height: 20px;
+}
+
+#invalid_input{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: orangered;
+  color: white;
+  padding: 5px;
+}

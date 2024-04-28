@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Whose Currency Is It Anyways?</title>
+  <link rel="stylesheet" href="static/stylesheet.css">
+  <!-- I am the currency converter home page -->
+</head>
+
+<body>
+{% block notifications %}
+<div class="notifications">
+</div>
+{% endblock notifications %}
+{% block content %}
+<main>
+    <h1>
+    Conversion Calculator
+    </h1>
+    <form id="conversion-form" action="/result" method="POST" >
+        <div class="input-container">
+            <label>Converting From</label>
+            <input
+                type="text"
+                name="from_currency"
+            />
+        </div>
+        <div class="input-container">
+            <label>Converting To</label>
+            <input
+                type="text"
+                name="to_currency"
+            />
+        </div>
+        <div class="input-container">
+            <label>Amount</label>
+            <input
+                type="text"
+                name="amount"
+            />
+        </div>
+        <div class="button-container">
+            <button>CONVERT</button>
+        </div>
+    </form>
+
+</main>
+{% endblock content %}
+
+</body>
+</html>
